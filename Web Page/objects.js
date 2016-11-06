@@ -1,6 +1,7 @@
 class Item {
-    constructor(name, value)
+    constructor(element, name, value)
     {
+        this.element = element;
         this.name = name;
         this.value = value;
     }
@@ -20,11 +21,4 @@ class Set {
         this.name = name;
         this.partitions = partitions;
     }
-}
-
-//console.log(default_sets_hack_str);
-
-
-function clear_sets()
-{
 }

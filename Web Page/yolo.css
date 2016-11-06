@@ -13,6 +13,15 @@
     border-top: solid 1px #D1D1D1;
 }
 
+.drag-handle {
+    padding: 5px;
+    transition: background-color 0.2s;
+}
+.drag-handle:hover {
+    cursor: move;
+    background-color: #DDDDFF;
+}
+
 .sets {
     padding: 0px;
 }
@@ -27,6 +36,7 @@
 
 .partitions {
     padding: 0px;
+    min-height: 20px;
     list-style-type: none;
 }
 .partition {
@@ -38,6 +48,9 @@
 
 .items {
     padding-left:10px;
+    min-height: 20px;
+
+    transition: height 0.2s;
 }
 .item {
     margin: 5px;
@@ -48,6 +61,8 @@
     flex-wrap: nowrap;
     //justify-content: flex-end;
     justify-content: space-between;
+
+    transition: transform 0.2s;
 
     background:#8AE2FF;
 }

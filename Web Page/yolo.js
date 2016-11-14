@@ -1,16 +1,18 @@
 $(document).ready(function() {
 
-    $(".items").sortable({
-        connectWith: ".items"
+    $(".sets").sortable({
+        handle : "> .list-header",
+        connectWith: ".sets",
+        cancel: ".editable",
     })
 
     $(".partitions").sortable({
-        handle : "> .drag-handle",
-        connectWith: ".partitions"
+        handle : "> .list-header",
+        connectWith: ".partitions",
+        cancel: ".editable",
     })
 
-    $(".sets").sortable({
-        handle : "> .drag-handle",
-        connectWith: ".sets"
+    $(".items").sortable({
+        connectWith: ".items"
     })
 });
